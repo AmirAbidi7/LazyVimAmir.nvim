@@ -2,11 +2,12 @@ return {
   {
     "MoaidHathot/dotnet.nvim",
     -- enabled = false,
+    lazy = true,
     branch = "dev",
     cmd = "DotnetUI",
     keys = {
-      { "<leader>/",  mode = { "n", "v" } },
-      { "<leader>na", "<cmd>:DotnetUI new_item<CR>",       { desc = ".NET new item", silent = true } },
+      { "<leader>/", mode = { "n", "v" } },
+      { "<leader>na", "<cmd>:DotnetUI new_item<CR>", { desc = ".NET new item", silent = true } },
       { "<leader>nb", "<cmd>:DotnetUI file bootstrap<CR>", { desc = ".NET bootstrap class", silent = true } },
       {
         "<leader>nra",
@@ -31,8 +32,9 @@ return {
       -- }
     },
   },
-  {
-    "GustavEikaas/easy-dotnet.nvim",
-    opts = {},
-  },
+  -- {
+  --   "GustavEikaas/easy-dotnet.nvim",
+  --   opts = {},
+  --   lazy = true,
+  -- },
 }

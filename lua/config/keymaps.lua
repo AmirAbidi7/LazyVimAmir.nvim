@@ -42,28 +42,28 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 -- vim.keymap.set("n", "<leader>Dr", require("easy-dotnet").run, { desc = "Run dotnet project" })
 -- vim.keymap.set("n", "<leader>Dpa", require("easy-dotnet").add_package, { desc = "Add NuGet Package" })
 -- vim.keymap.set("n", "<leader>Dpr", require("easy-dotnet").remove_package, { desc = "Remove NuGet Package" })
-vim.keymap.set(
-  "n",
-  "<leader>nma",
-  require("easy-dotnet").ef_migrations_add,
-  { desc = "Add Entity Framework Migration" }
-)
-vim.keymap.set(
-  "n",
-  "<leader>nml",
-  require("easy-dotnet").ef_migrations_list,
-  { desc = "List all Entity Frame Migration" }
-)
-vim.keymap.set(
-  "n",
-  "<leader>nme",
-  require("easy-dotnet").ef_database_update,
-  { desc = "Update database to current migration" }
-)
-
-vim.keymap.set(
-  "n",
-  "<leader>ee",
-  "oif err != nil {<CR>return err<CR>}<Esc>k",
-  { noremap = true, desc = "Insert error check" }
-)
+-- vim.keymap.set(
+--   "n",
+--   "<leader>nma",
+--   require("easy-dotnet").ef_migrations_add,
+--   { desc = "Add Entity Framework Migration" }
+-- )
+-- vim.keymap.set(
+--   "n",
+--   "<leader>nml",
+--   require("easy-dotnet").ef_migrations_list,
+--   { desc = "List all Entity Frame Migration" }
+-- )
+-- vim.keymap.set(
+--   "n",
+--   "<leader>nme",
+--   require("easy-dotnet").ef_database_update,
+--   { desc = "Update database to current migration" }
+-- )
+--
+-- vim.keymap.set(
+--   "n",
+--   "<leader>ee",
+--   "oif err != nil {<CR>return err<CR>}<Esc>k",
+--   { noremap = true, desc = "Insert error check" }
+-- )

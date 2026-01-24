@@ -6,6 +6,7 @@ return {
       "MunifTanjim/nui.nvim",
       "nvim-telescope/telescope.nvim",
     },
+    lazy = true,
     config = function()
       require("spring-initializr").setup()
     end,
@@ -16,6 +17,7 @@ return {
       "neovim/nvim-lspconfig",
       "mfussenegger/nvim-jdtls",
     },
+    lazy = true,
     config = function()
       local springboot_nvim = require("springboot-nvim")
       vim.keymap.set("n", "<leader>Jr", springboot_nvim.boot_run, { desc = "Spring Boot Run Project" })
