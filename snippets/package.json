@@ -1,0 +1,19 @@
+{
+  "name": "personal-snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "yaml",
+        "path": "./yml.json"
+      },
+      {
+        "language": "yml",
+        "path": "./yml.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./astro.json"
+      }
+    ]
+  }
+}

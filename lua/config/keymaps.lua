@@ -12,6 +12,21 @@ vim.keymap.set("n", "<leader>wk", "[w", { desc = "Prev Warning" })
 vim.keymap.set("n", "<leader>en", require("snacks").explorer.open, { desc = "open file explorer" })
 vim.keymap.del("n", "<leader>e")
 
+-- vim.keymap.del("n", "<A-j>")
+-- vim.keymap.del("i", "<A-j>")
+-- vim.keymap.del("v", "<A-j>")
+-- vim.keymap.del("n", "<A-k>")
+-- vim.keymap.del("i", "<A-k>")
+-- vim.keymap.del("v", "<A-k>")
+-- -- Instead of mapping to <A-j>/<A-k>, map to the actual function calls
+-- vim.keymap.set("n", "<C-j>", ":m .+1<CR>==", { desc = "Move line down", silent = true })
+-- vim.keymap.set("i", "<C-j>", "<Esc>:m .+1<CR>==gi", { desc = "Move line down", silent = true })
+-- vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down", silent = true })
+--
+-- vim.keymap.set("n", "<C-k>", ":m .-2<CR>==", { desc = "Move line up", silent = true })
+-- vim.keymap.set("i", "<C-k>", "<Esc>:m .-2<CR>==gi", { desc = "Move line up", silent = true })
+-- vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up", silent = true })
+--
 -- Angular file navigation
 local angular_functions = require("config.angular.functions")
 
@@ -67,3 +82,4 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 --   "oif err != nil {<CR>return err<CR>}<Esc>k",
 --   { noremap = true, desc = "Insert error check" }
 -- )
+--
