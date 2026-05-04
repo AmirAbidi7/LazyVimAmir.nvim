@@ -1,0 +1,181 @@
+{
+  "Angular @if": {
+    "prefix": "@if",
+    "body": ["@if (${1:condition}) {", "  ${2:content}", "}"],
+    "description": "Angular @if control flow block"
+  },
+  "Angular @if else": {
+    "prefix": "@ifelse",
+    "body": [
+      "@if (${1:condition}) {",
+      "  ${2:content}",
+      "} @else {",
+      "  ${3:else content}",
+      "}"
+    ],
+    "description": "Angular @if with @else block"
+  },
+  "Angular @if else if": {
+    "prefix": "@ifelseif",
+    "body": [
+      "@if (${1:condition}) {",
+      "  ${2:content}",
+      "} @else if (${3:elseif condition}) {",
+      "  ${4:elseif content}",
+      "} @else {",
+      "  ${5:else content}",
+      "}"
+    ],
+    "description": "Angular @if with @else if and @else blocks"
+  },
+  "Angular @for": {
+    "prefix": "@for",
+    "body": [
+      "@for (${1:item} of ${2:items}; track ${3:item.id}) {",
+      "  {{ ${1:item}.${4:property} }}",
+      "}"
+    ],
+    "description": "Angular @for loop with tracking"
+  },
+  "Angular @for with index": {
+    "prefix": "@fori",
+    "body": [
+      "@for (${1:item} of ${2:items}; track $index) {",
+      "  {{ ${1:item}.${3:property} }}",
+      "}"
+    ],
+    "description": "Angular @for loop with index tracking"
+  },
+  "Angular @for with empty": {
+    "prefix": "@forempty",
+    "body": [
+      "@for (${1:item} of ${2:items}; track ${3:item.id}) {",
+      "  {{ ${1:item}.${4:property} }}",
+      "} @empty {",
+      "  ${5:No items found}",
+      "}"
+    ],
+    "description": "Angular @for loop with empty block"
+  },
+  "Angular @switch": {
+    "prefix": "@switch",
+    "body": [
+      "@switch (${1:expression}) {",
+      "  @case (${2:value}) {",
+      "    ${3:content}",
+      "  }",
+      "  @default {",
+      "    ${4:default content}",
+      "  }",
+      "}"
+    ],
+    "description": "Angular @switch control flow"
+  },
+  "Angular @switch multiple cases": {
+    "prefix": "@switchcases",
+    "body": [
+      "@switch (${1:expression}) {",
+      "  @case (${2:value1}) {",
+      "    ${3:content1}",
+      "  }",
+      "  @case (${4:value2}) {",
+      "    ${5:content2}",
+      "  }",
+      "  @default {",
+      "    ${6:default content}",
+      "  }",
+      "}"
+    ],
+    "description": "Angular @switch with multiple cases"
+  },
+  "Angular @defer": {
+    "prefix": "@defer",
+    "body": [
+      "@defer (${1:on viewport}) {",
+      "  ${2:content}",
+      "} @placeholder {",
+      "  ${3:Loading...}",
+      "} @loading {",
+      "  ${4:Loading content...}",
+      "} @error {",
+      "  ${5:Failed to load}",
+      "}"
+    ],
+    "description": "Angular @defer with all blocks"
+  },
+  "Angular @defer minimal": {
+    "prefix": "@defermin",
+    "body": ["@defer (${1:on viewport}) {", "  ${2:content}", "}"],
+    "description": "Angular @defer minimal"
+  },
+  "Angular @defer on viewport": {
+    "prefix": "@deferviewport",
+    "body": [
+      "@defer (on viewport) {",
+      "  ${1:content}",
+      "} @placeholder {",
+      "  ${2:Scroll to load...}",
+      "}"
+    ],
+    "description": "Angular @defer on viewport"
+  },
+  "Angular @defer on interaction": {
+    "prefix": "@deferinteraction",
+    "body": [
+      "@defer (on interaction) {",
+      "  ${1:content}",
+      "} @placeholder {",
+      "  ${2:Click to load...}",
+      "}"
+    ],
+    "description": "Angular @defer on interaction"
+  },
+  "Angular @defer on hover": {
+    "prefix": "@deferhover",
+    "body": [
+      "@defer (on hover) {",
+      "  ${1:content}",
+      "} @placeholder {",
+      "  ${2:Hover to load...}",
+      "}"
+    ],
+    "description": "Angular @defer on hover"
+  },
+  "Angular @defer on timer": {
+    "prefix": "@defertimer",
+    "body": [
+      "@defer (on timer(${1:5000}ms)) {",
+      "  ${2:content}",
+      "} @placeholder {",
+      "  ${3:Loading in ${1:5000}ms...}",
+      "}"
+    ],
+    "description": "Angular @defer on timer"
+  },
+  "Angular @defer when": {
+    "prefix": "@deferwhen",
+    "body": [
+      "@defer (when ${1:condition}) {",
+      "  ${2:content}",
+      "} @placeholder {",
+      "  ${3:Waiting...}",
+      "}"
+    ],
+    "description": "Angular @defer when condition"
+  },
+  "Angular @defer prefetch": {
+    "prefix": "@deferprefetch",
+    "body": ["@defer (on viewport; prefetch on idle) {", "  ${1:content}", "}"],
+    "description": "Angular @defer with prefetch"
+  },
+  "Angular @let": {
+    "prefix": "@let",
+    "body": ["@let ${1:variable} = ${2:value};"],
+    "description": "Angular @let variable declaration"
+  },
+  "Angular @let with pipe": {
+    "prefix": "@letpipe",
+    "body": ["@let ${1:variable} = ${2:value} | ${3:pipe};"],
+    "description": "Angular @let with pipe"
+  }
+}

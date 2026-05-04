@@ -1,0 +1,42 @@
+{
+  "Astro Prettier Config": { "prefix": "astro-prettier",
+    "body": [
+      "/** @type {import(\"prettier\").Config} */",
+      "export default {",
+      "  plugins: [\"prettier-plugin-astro\"],",
+      "  overrides: [",
+      "    {",
+      "      files: \"*.astro\",",
+      "      options: {",
+      "        parser: \"astro\",",
+      "      },",
+      "    },",
+      "  ],",
+      "};"
+    ],
+    "description": "Prettier configuration for Astro projects with Astro plugin"
+  },
+  "Astro Prettier Config (with tabWidth)": {
+    "prefix": "astro-prettier-full",
+    "body": [
+      "/** @type {import(\"prettier\").Config} */",
+      "export default {",
+      "  plugins: [\"prettier-plugin-astro\"],",
+      "  overrides: [",
+      "    {",
+      "      files: \"*.astro\",",
+      "      options: {",
+      "        parser: \"astro\",",
+      "      },",
+      "    },",
+      "  ],",
+      "  semi: ${1:false},",
+      "  singleQuote: ${2:true},",
+      "  tabWidth: ${3:2},",
+      "  printWidth: ${4:100},",
+      "  trailingComma: \"${5:es5}\",",
+      "};"
+    ],
+    "description": "Full Prettier configuration for Astro with additional formatting options"
+  }
+}
